@@ -21,9 +21,11 @@
 
 {
     const nameProduct = prompt('Наименование товара:');
-    const quantityProduct = Number(prompt("Количество товара:"));
+    const quantityProduct = +prompt("Количество товара:");
     const categoryProduct = prompt('Категория товара:');
-    const countProduct = Number(prompt('Цена товара:'));
+    const countProduct = +prompt('Цена товара:');
     const summProduct = quantityProduct * countProduct;
+    //console.log(typeof quantityProduct);
+    //console.log(typeof countProduct);
     console.log(`На складе ${quantityProduct} единицы товара "${nameProduct}" на сумму ${summProduct} деревянных`);
 }
